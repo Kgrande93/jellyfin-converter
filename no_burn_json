@@ -1,0 +1,8 @@
+{
+  "PresetList": [{
+    "PresetName": "NoBurn",
+    "SubtitleBurnBehavior": "none",
+    "SubtitleBurnDVDSub": false,
+    "SubtitleBurnBDSub": false
+  }]
+}
