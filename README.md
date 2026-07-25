@@ -1,5 +1,7 @@
 # jellyfin-converter - grandedata.no
 
+**Made by love in Norway 🇳🇴**
+
 A macOS script that converts MKV files to a Jellyfin-optimized format using HandBrakeCLI. Processes both movies and TV shows automatically with retry logic and ntfy notifications.
 
 ---
@@ -34,14 +36,14 @@ The script does two things:
 
 Go to [handbrake.fr/downloads2.php](https://handbrake.fr/downloads2.php) and download HandBrakeCLI for macOS. Extract it and move it to `/usr/local/bin/`:
 
-```bash
+```
 sudo mv HandBrakeCLI /usr/local/bin/
 chmod +x /usr/local/bin/HandBrakeCLI
 ```
 
 ### Step 2 — Clone the repo
 
-```bash
+```
 git clone https://github.com/Kgrande93/jellyfin-converter.git
 cd jellyfin-converter
 ```
@@ -54,7 +56,7 @@ Copy `no_burn.json` to your desktop, or update the `PRESET_FILE` variable in the
 
 Open `convert_movies.sh` and edit the variables at the top:
 
-```bash
+```
 HANDBRAKE="/usr/local/bin/HandBrakeCLI"
 MOVIES_DIR="/Volumes/jellyfin/Movies"
 SHOWS_DIR="/Volumes/jellyfin/Shows"
@@ -64,24 +66,24 @@ NTFY_URL="https://ntfy.example.com/yourtopic"
 
 ### Step 5 — Make the script executable
 
-```bash
+```
 chmod +x convert_movies.sh
 ```
 
 ### Step 6 — Run
 
-```bash
+```
 ./convert_movies.sh
 ```
 
 ## Files
 
-| File                | Description                                                        |
-| ------------------- | -------------------------------------------------------------------- |
-| `convert_movies.sh` | Main script                                                           |
+| File                | Description                                                             |
+| ------------------- | ------------------------------------------------------------------------ |
+| `convert_movies.sh` | Main script                                                             |
 | `no_burn.json`      | HandBrake preset — preserves audio tracks and subtitles without burn-in |
-| `README.md`      | This file |
-| `LICENSE`      | LICENSE |
+| `README.md`         | This file                                                               |
+| `LICENSE`           | LICENSE                                                                 |
 
 ## Logging
 
